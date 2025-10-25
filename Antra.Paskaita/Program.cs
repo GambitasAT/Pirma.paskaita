@@ -61,6 +61,22 @@
             Console.WriteLine();
             Console.WriteLine(@"Užduotis 03");
             Console.WriteLine();
+            string exampleString = "   You can't fill a cup if its already full          ";
+            //1 .Substring(nuo,iki)
+            string substringExample = exampleString.Substring(13,10);
+            Console.WriteLine(substringExample);
+            //2 .Replace(iš, į ką)
+            string replaceExample = exampleString.Replace(' ', '*');
+            Console.WriteLine(replaceExample);
+            //3. .IndexOf(kurį)
+            Console.WriteLine(exampleString.IndexOf("Y"));
+            Console.WriteLine(exampleString.LastIndexOf("a"));
+            //4 .Trim()
+            Console.WriteLine(exampleString.Trim());
+            //5 .ToLowerInvariant()
+            Console.WriteLine(exampleString.ToLowerInvariant());
+            //6 .ToUpperInvariant()
+            Console.WriteLine(exampleString.ToUpperInvariant());
 
 
 
