@@ -2,10 +2,13 @@
 
 namespace Pirma.paskaita
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Paskaita 01");
+            Console.WriteLine();
+
             Console.WriteLine("Labas, pasauli");
             Console.WriteLine("kiek");
             int Vienas = 1;
@@ -81,22 +84,13 @@ namespace Pirma.paskaita
             string pareigos = "Software Developer";
             string eMail = "vardenis.pavardenis@example.com";
             string tel = "+1 123-456-7890";
-            Console.WriteLine(@"============== Vizitinė ==============");
-            Console.WriteLine(@"======================================");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            Console.WriteLine(@"================ Vizitinė ================");
+            Console.WriteLine("Vardas   : " + vardas + " " + pavarde);
+            Console.WriteLine("Amžius   : " + amzius);
+            Console.WriteLine("Pareigos : " + pareigos);
+            Console.WriteLine("E. Paštas: " + eMail);
+            Console.WriteLine("Tel.     : " + tel);
+            Console.WriteLine(@"==========================================");
 
         }
     }
