@@ -41,6 +41,27 @@
             Console.WriteLine();
             Console.WriteLine(@"Užduotis 01");
             Console.WriteLine();
+            string kintamasis = "samana";
+            string keitimas = kintamasis.Replace('a', 'o');
+            Console.WriteLine(kintamasis + " " + keitimas);
+            Console.WriteLine(keitimas.Length);
+            char[] kintamasis2 = {'s','a','m','a','n','a' };
+            Console.WriteLine(kintamasis2[3]);
+            Console.WriteLine(kintamasis[1]);
+            Console.WriteLine(kintamasis.Length + " " + kintamasis2.Length);
+            Console.WriteLine();
+            Console.WriteLine(@"Užduotis 02");
+            Console.WriteLine();
+            string subString = "Mano vardas ...";
+            Console.WriteLine(subString);
+            string subs = subString.Substring(5);
+            Console.WriteLine(subs);
+            string subs2 = subString.Substring(0,4);
+            Console.WriteLine(subs2);
+            Console.WriteLine();
+            Console.WriteLine(@"Užduotis 03");
+            Console.WriteLine();
+
 
 
         }
