@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Paskaita 02");
+            Console.WriteLine();
+            Console.WriteLine(@"Užduotis 01");
+            Console.WriteLine();
+
         }
     }
 }
