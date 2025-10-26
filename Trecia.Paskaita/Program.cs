@@ -10,7 +10,7 @@ namespace Trecia.Paskaita
             Console.WriteLine("Užduotis 01\n");
             Console.WriteLine("Įveskite skaičių: ");
             int ivestisSk = Convert.ToInt32(Console.ReadLine());
-            
+
             if (ivestisSk > 100)
             {
                 Console.WriteLine("Skaičius " + ivestisSk + " yra didesnis nei 100");
@@ -38,8 +38,35 @@ namespace Trecia.Paskaita
             else { Console.WriteLine("Įvedėte klaidingą numerį"); }
 
             Console.WriteLine("\nUžduotis 02\n");
+            Console.WriteLine("Įveskite skaičių: ");
+            int ivestisCk = Convert.ToInt32(Console.ReadLine());
+            int reminder = ivestisCk % 2;
+            int reminder2 = ivestisCk % 5;
+
+            if (reminder == 0) { Console.WriteLine("Skaičius yra lyginis"); }
+            else if (reminder2 == 0) { Console.WriteLine("Skaičius dalijasi iš penkių"); }
+            else Console.WriteLine("Skaičius neatitinka jokių salygų");
+
+            Console.WriteLine("\nUžduotis 02-2\n");
+
+            Console.WriteLine("Įveskite temperatūros rodmenis: ");
+            int ivestisTemp = Convert.ToInt32(Console.ReadLine());
+
+            if (ivestisTemp >= -100 && ivestisTemp < 0) { Console.WriteLine("Šalta"); }
+            else if (ivestisTemp >= 0 && ivestisTemp <= 20) { Console.WriteLine("Vėsu"); }
+            else if (ivestisTemp > 20 && ivestisTemp < 100) { Console.WriteLine("Karšta"); }
+            else Console.WriteLine("Temperatūra esanti žemesnė nei -100 ar aukštesnė nei 100, yra netinkama");
 
 
+            Console.WriteLine("\nUžduotis 03\n");
+
+            Console.WriteLine("Kokią valandą pakilote?: ");
+            int ivestisVal = Convert.ToInt32(Console.ReadLine());
+
+            if (ivestisVal > 0 && ivestisVal < 12) { Console.WriteLine("Geros dienos!"); }
+            else if (ivestisVal >= 12 && ivestisVal < 18) { Console.WriteLine("Geros popietės!"); }
+            else if (ivestisVal >= 18 && ivestisVal < 24) { Console.WriteLine("Gero vakaro!"); }
+            else { Console.WriteLine("klaidingai nurodyta valanda!"); }
 
 
 
