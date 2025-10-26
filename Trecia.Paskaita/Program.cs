@@ -57,7 +57,6 @@ namespace Trecia.Paskaita
             else if (ivestisTemp > 20 && ivestisTemp < 100) { Console.WriteLine("Karšta"); }
             else Console.WriteLine("Temperatūra esanti žemesnė nei -100 ar aukštesnė nei 100, yra netinkama");
 
-
             Console.WriteLine("\nUžduotis 03\n");
 
             Console.WriteLine("Kokią valandą pakilote?: ");
@@ -67,6 +66,47 @@ namespace Trecia.Paskaita
             else if (ivestisVal >= 12 && ivestisVal < 18) { Console.WriteLine("Geros popietės!"); }
             else if (ivestisVal >= 18 && ivestisVal < 24) { Console.WriteLine("Gero vakaro!"); }
             else { Console.WriteLine("klaidingai nurodyta valanda!"); }
+
+            Console.WriteLine("\nUžduotis 03-2\n");
+
+            Console.WriteLine("Enrer Password: ");
+            string ivestisPsw = Console.ReadLine();
+            string password = "5imp#s0n-s";
+            string hack = "01101001 01101110";
+
+            if (ivestisPsw == "Mellon")
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Access Granted");
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            else if (ivestisPsw == password)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Access Granted");
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            else if (ivestisPsw == hack)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("HACKED!");
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            else
+            {
+                Console.WriteLine("Wrong password, please try again!");
+            }
+
+            Console.WriteLine("\nUžduotis 04\n");
+
+
+
+
+
+
+
+
+
 
 
 
