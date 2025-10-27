@@ -107,25 +107,48 @@ namespace Trecia.Paskaita
             //else if (ivestisAge >= 65) { Console.WriteLine("You have senior discount!"); }
             //else { Console.WriteLine("Wrong age, please try again"); }
 
-            Console.WriteLine("\nUžduotis 05\n");
+            //Console.WriteLine("\nUžduotis 05\n");
 
-            Console.WriteLine("Please enter years, to check if its leap year: ");
-            int insertYear = Convert.ToInt32(Console.ReadLine());
-            int reminderYear = insertYear % 4; 
-            int reminderYear2 = insertYear !% 100;
-            int reminderYear3 = insertYear % 400;
+            //Console.WriteLine("Please enter years, to check if its leap year: ");
+            //int insertYear = Convert.ToInt32(Console.ReadLine());
+            //int reminderYear = insertYear % 4; 
+            //int reminderYear2 = insertYear !% 100;
+            //int reminderYear3 = insertYear % 400;
 
-            if (reminderYear == 0 && reminderYear2 != 0)
-            {
-                Console.WriteLine("It's leap year");
-            }
-            else if (reminderYear3 == 0)
-            {
-                Console.WriteLine("It's leap year");
-            }
-            else { Console.WriteLine("It's not leap year"); }
+            //if (reminderYear == 0 && reminderYear2 != 0)
+            //{
+            //    Console.WriteLine("It's leap year");
+            //}
+            //else if (reminderYear3 == 0)
+            //{
+            //    Console.WriteLine("It's leap year");
+            //}
+            //else { Console.WriteLine("It's not leap year"); }
+
+            //Console.WriteLine("\nUžduotis 06\n");
+
+            //Console.WriteLine("Please enter number: ");
+            //int insertNumb = Convert.ToInt32(Console.ReadLine());
+            //int reminderNumb = insertNumb % 3;
+            //int reminderNumb2 = insertNumb % 5;
+
+            //if (reminderNumb == 0 && reminderNumb2 == 0)
+            //{
+            //    Console.WriteLine("BazingaPop");
+            //}
+            //else if (reminderNumb == 0 && reminderNumb2 != 0)
+            //{
+            //    Console.WriteLine("Bazinga");
+            //}
+            //else if (reminderNumb2 == 0 && reminderNumb != 0)
+            //{
+            //    Console.WriteLine("Pop");
+            //}
+            //else { Console.WriteLine("Number is not Bazinga or Pop"); }
 
             Console.WriteLine("\nUžduotis 06\n");
+
+
 
 
 
