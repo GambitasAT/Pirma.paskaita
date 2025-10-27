@@ -109,11 +109,23 @@ namespace Trecia.Paskaita
 
             Console.WriteLine("\nUžduotis 05\n");
 
-            Console.WriteLine("Please insert years, to check if its leap year: ");
+            Console.WriteLine("Please enter years, to check if its leap year: ");
             int insertYear = Convert.ToInt32(Console.ReadLine());
-            int reminderYear = insertYear % 4 ; 
+            int reminderYear = insertYear % 4; 
+            int reminderYear2 = insertYear !% 100;
+            int reminderYear3 = insertYear % 400;
 
+            if (reminderYear == 0 && reminderYear2 != 0)
+            {
+                Console.WriteLine("It's leap year");
+            }
+            else if (reminderYear3 == 0)
+            {
+                Console.WriteLine("It's leap year");
+            }
+            else { Console.WriteLine("It's not leap year"); }
 
+            Console.WriteLine("\nUžduotis 06\n");
 
 
 
