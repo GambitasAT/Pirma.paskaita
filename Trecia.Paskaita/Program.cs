@@ -146,7 +146,53 @@ namespace Trecia.Paskaita
             //}
             //else { Console.WriteLine("Number is not Bazinga or Pop"); }
 
-            Console.WriteLine("\nUžduotis 06\n");
+            //Console.WriteLine("\nUžduotis 07\n");
+
+            //Console.WriteLine("Please enter two numbers: ");
+            //int insertPossitive = Convert.ToInt32(Console.ReadLine());
+            //int insertPossitive2 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("You entered: " + insertPossitive + " " + insertPossitive2);
+
+            //if (insertPossitive >= 0 && insertPossitive2 >= 0)
+            //{
+            //    Console.WriteLine("Both numbers are possitive");
+            //}
+            //else if (insertPossitive >= 0 && insertPossitive2 <= 0 || insertPossitive <= 0 && insertPossitive2 >= 0)
+            //{
+            //    Console.WriteLine("Only one number is possitive");
+            //}
+            //else if (insertPossitive <= 0 && insertPossitive2 <= 0)
+            //{
+            //    Console.WriteLine("Both numbers are negative");
+            //}
+            //else { Console.WriteLine("Wrong number, please try again"); }
+
+            Console.WriteLine("\nUžduotis 07-2\n");
+
+            Console.WriteLine("Please enter 3 numbers: ");
+            int insertEven = Convert.ToInt32(Console.ReadLine());
+            int insertEven2 = Convert.ToInt32(Console.ReadLine());
+            int insertEven3 = Convert.ToInt32(Console.ReadLine());
+
+            if (insertEven == insertEven2 && insertEven == insertEven3)
+            {
+                Console.WriteLine("All numbers are even");
+            }
+            else if (insertEven == insertEven2 && insertEven != insertEven3
+                  || insertEven == insertEven3 && insertEven != insertEven2
+                  || insertEven2 == insertEven3 && insertEven != insertEven2)
+            {
+                Console.WriteLine("Only two numbers are even");
+            }
+            else { Console.WriteLine("Non of numbers are even"); }
+
+            Console.WriteLine("\nUžduotis 08\n");
+
+
+
+
+
 
 
 
